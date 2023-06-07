@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Todo List</title>
+  <style>
+    body {
+      background-color: #130707;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .task {
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .task strong {
+      font-weight: bold;
+    }
+
+    .remove-btn {
+      background-color: #f44336;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .remove-btn:hover {
+      background-color: #d32f2f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Dynamic Todo List</h1>
+  <div class="form-group">
+    <input type="text" id="taskInput" placeholder="Enter task">
+  </div>
+  <div class="form-group">
+    <input type="text" id="deadlineInput" placeholder="Enter deadline">
+  </div>
+  <div class="form-group">
+    <select id="prioritySelect">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <button onclick="addTask()">Add Task</button>
+  </div>
+  <div id="taskList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
